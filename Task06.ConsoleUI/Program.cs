@@ -12,10 +12,22 @@ namespace Task06.ConsoleUI
     {
         static void Main(string[] args)
         {
-            string fst = "abcdefghijklmnopqrstuvwxyz";
-            string scnd = "abcdefghijklmnopqrstuvwxyz";
-            Console.WriteLine(ExtensionToolsForString.UnionAndSortLINQ(fst, scnd));
-            Console.ReadLine();
+           
+            do
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("enter first string, must contain only a-z or A-Z");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                string fst = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("enter second string, must contain only a-z or A-Z");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                string scnd = Console.ReadLine();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(ExtensionToolsForString.UnionAndSortLINQ(fst,scnd));
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.WriteLine("enter 'stop' to exit or press enter to continue");
+            } while (Console.ReadLine() != "stop");
         }
     }
 }

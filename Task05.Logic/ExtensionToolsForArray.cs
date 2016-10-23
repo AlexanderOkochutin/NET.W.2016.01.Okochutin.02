@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task05.Logic
 {
@@ -27,8 +23,6 @@ namespace Task05.Logic
             long leftSum, rightSum = 0;
             if (data.Length < 3)
             {
-
- 
                 return incorrectData;
             }
 

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Task06.Logic
 {
@@ -16,8 +14,22 @@ namespace Task06.Logic
         /// <returns>string received from union and sort of two input strings</returns>
         public static string UnionAndSortLINQ(string fstString, string scndString)
         {
-            var rstString = (from s in fstString.Union(scndString) orderby s select s).ToArray();
-            return new string(rstString);
+            string pattern = @"^[A-Za-z]+$";
+            Regex regex = new Regex(pattern);
+            Match match1 = regex.Match(fstString);
+            Match match2 = regex.Match(scndString);
+            if (match1.Success && match2.Success)
+            {
+                var rstString = (from s in fstString.Union(scndString) orderby s select s).ToArray();
+                return new string(rstString);
+            }
+            else
+            {
+
+                return "check input information!";
+
+            }
+            
         }
 
      
