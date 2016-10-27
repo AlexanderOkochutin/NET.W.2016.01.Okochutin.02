@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <data>0,0,0,0,0,0</data>
+    <ExpectedResult>1</ExpectedResult>
+  </TestCase>
+</TestCases>
