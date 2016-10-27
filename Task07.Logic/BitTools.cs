@@ -15,7 +15,10 @@ namespace Task07.Logic
         /// <returns> result of insertion scnd number in first number</returns>
         public static int? BitInsertion(int frstNumber,int scndNumber, int startBit,int endBit)
         {
-            if (startBit > endBit || startBit < 0 || endBit < 0 || endBit > 31) { return null; }
+            if (startBit > endBit || startBit < 0 || endBit < 0 || endBit > 31)
+            {
+                return null;
+            }
             BitVector32 a = new BitVector32(frstNumber);
             BitVector32 b = new BitVector32(scndNumber);
             int maskA = BitVector32.CreateMask();

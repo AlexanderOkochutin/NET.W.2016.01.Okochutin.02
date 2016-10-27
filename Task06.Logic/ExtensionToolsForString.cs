@@ -14,7 +14,7 @@ namespace Task06.Logic
         /// <returns>string received from union and sort of two input strings</returns>
         public static string UnionAndSortLINQ(string fstString, string scndString)
         {
-            string pattern = @"^[A-Za-z]+$";
+            string pattern = @"^[a-z]+$";
             Regex regex = new Regex(pattern);
             Match match1 = regex.Match(fstString);
             Match match2 = regex.Match(scndString);
@@ -26,7 +26,7 @@ namespace Task06.Logic
             else
             {
 
-                return "check input information!";
+                return null;
 
             }
             
