@@ -15,15 +15,16 @@ namespace Task05.Logic
         ///           -2 if array length less than 3
         ///           -1 if index of equilibrium not finded
         /// </returns>
-         
+        /// <exception >
+        /// when data array length less than 3, throw ArgumentException()
+        /// </exception>
         public static int IndexOfEquilibriumFinder(int[] data)
         {
             int equIndex = -1;
-            int incorrectData = -2;
             long leftSum, rightSum = 0;
             if (data.Length < 3)
             {
-                return incorrectData;
+                throw new ArgumentException(nameof(data) + " must have length more than 3");
             }
 
             leftSum = data[0];
