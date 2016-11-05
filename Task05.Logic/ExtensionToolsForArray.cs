@@ -18,7 +18,7 @@ namespace Task05.Logic
         /// <exception >
         /// when data array length less than 3, throw ArgumentException()
         /// </exception>
-        public static int IndexOfEquilibriumFinder(int[] data)
+        public static int IndexOfEquilibriumFinder(this int[] data)
         {
             int equIndex = -1;
             long leftSum, rightSum = 0;

@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TestCases>
   <TestCase>
-    <data>0,0,0,0,0,0</data>
+    <value>0,0,0,0,0</value>
     <ExpectedResult>1</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <value>1,2,3,4,5,6</value>
+    <ExpectedResult>-1</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <value>1,2,3,0,3,2,1</value>
+    <ExpectedResult>3</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <value>1,-2,-3,0,-4</value>
+    <ExpectedResult>3</ExpectedResult>
   </TestCase>
 </TestCases>
