@@ -25,13 +25,8 @@ namespace Task06.Logic
             }
             else
             {
-
-                return null;
-
-            }
-            
-        }
-
-     
+                throw new ArgumentException("input string must consist only a-z");
+            }    
+        }   
     }
 }

@@ -86,6 +86,5 @@ namespace Task06.Tests
             string expected = "abcdfg";
             Assert.AreEqual(actual, expected);
         }
-
     }
 }

@@ -19,7 +19,6 @@ namespace Task05.Logic.NUnitTests
                 yield return new TestCaseData(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}).Returns(-1);
                 yield return new TestCaseData(new int[] {1, 2, 3, 0, 3, 2, 1}).Returns(3);
                 yield return new TestCaseData(new int[] {1, -2, -3, 0, -4}).Returns(3);
-
             }
         }
 
@@ -29,6 +28,4 @@ namespace Task05.Logic.NUnitTests
             return IndexOfEquilibriumFinder(input);
         }
     }
-
-
 }
